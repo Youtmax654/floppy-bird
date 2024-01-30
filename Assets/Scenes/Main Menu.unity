@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 1134547469}
   - component: {fileID: 1134547468}
   m_Layer: 5
-  m_Name: Play
+  m_Name: Start Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -643,7 +643,7 @@ GameObject:
   - component: {fileID: 1650956576}
   - component: {fileID: 1650956580}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Buttons Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -758,7 +758,7 @@ GameObject:
   - component: {fileID: 1862651637}
   - component: {fileID: 1862651636}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Quit Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

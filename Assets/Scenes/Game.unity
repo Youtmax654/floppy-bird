@@ -462,7 +462,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _GameOver: {fileID: 1896413541233563081, guid: 1833bc01647cc194d86353d056cad3a7, type: 3}
-  _RestartBtn: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,8 +1126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c4f53603f2956041836944ab47f62e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _GameOver: {fileID: 1896413541233563081, guid: 1833bc01647cc194d86353d056cad3a7, type: 3}
-  _RestartBtn: {fileID: 6355322491218265273, guid: 57ca8a01024e2ea4eb1e7144de589f79, type: 3}
+  _GameOver: {fileID: 6957579517459593113, guid: 0e39109eef2f5004199a56f1f2649291, type: 3}
 --- !u!1 &1390741961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,6 +1342,7 @@ GameObject:
   - component: {fileID: 1772097109}
   - component: {fileID: 1772097108}
   - component: {fileID: 1772097112}
+  - component: {fileID: 1772097113}
   m_Layer: 5
   m_Name: Score Canvas
   m_TagString: Untagged
@@ -1451,6 +1450,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentScoreText: {fileID: 591298442}
   _highScoreText: {fileID: 328803722}
+--- !u!114 &1772097113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1772097107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b41f092081edaa4b8bfc60b91e25404, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1915780117
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,6 @@ public class Score : MonoBehaviour
 
     private void Awake()
     {
-        Debug.Log("Score Awake method called");
         if(instance == null)
         {
             instance = this;
