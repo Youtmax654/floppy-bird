@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameOver : MonoBehaviour
 {
     [SerializeField] private GameObject _GameOver;
+    [SerializeField] private GameObject _RestartBtn;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +22,19 @@ public class GameOver : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Vector3 spawnPos = new Vector3(0, 1);
-        Instantiate(_GameOver, spawnPos, Quaternion.identity);
+        if (collision.gameObject.CompareTag("Pipe"))
+        {
+            Time.timeScale = 0;
 
-        Time.timeScale = 0;
+            Instantiate(_GameOver, _GameOver.transform.position, Quaternion.identity);
+            Instantiate(_RestartBtn, _RestartBtn.transform.position, Quaternion.identity);
+        }
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            Time.timeScale = 0;
+
+            Instantiate(_GameOver, _GameOver.transform.position, Quaternion.identity);
+            Instantiate(_RestartBtn, _RestartBtn.transform.position, Quaternion.identity);
+        }
     }
 }
