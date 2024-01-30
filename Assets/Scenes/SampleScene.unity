@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0693a7746386164478f93a8da147da46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxTime: 1.5
+  _maxTime: 2.5
   _heightRange: 0.45
   _pipe: {fileID: 5477748440643546452, guid: 8f4c707d39ec55e4dafdfd8d6b956e4e, type: 3}
 --- !u!4 &85530783
