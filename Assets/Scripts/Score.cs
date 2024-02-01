@@ -9,12 +9,14 @@ public class Score : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI _currentScoreText;
     [SerializeField] TextMeshProUGUI _highScoreText;
-
+    [SerializeField] TextMeshProUGUI _goldenAppleText;
+    
+    public AudioSource scoreAudio;
     private int _score;
+    private int _goldenApple;
 
     private void Awake()
     {
-        Debug.Log("Score Awake method called");
         if(instance == null)
         {
             instance = this;
@@ -47,8 +49,37 @@ public class Score : MonoBehaviour
 
     public void UpdateScore()
     {
+        scoreAudio.Play();
         _score++;
         _currentScoreText.text = _score.ToString();
         UpdateHighScore();
+    }
+
+    public void AddGoldenApple()
+    {
+        if (_goldenApple < 3)
+        {
+            _goldenApple++;
+            _goldenAppleText.text = _goldenApple.ToString();
+        }
+    }
+
+    public bool UseGoldenApple()
+    {
+        if (_goldenApple > 0)
+        {
+            _goldenApple--;
+            _goldenAppleText.text = _goldenApple.ToString();
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public int GetGoldenApple()
+    {
+        return _goldenApple;
     }
 }

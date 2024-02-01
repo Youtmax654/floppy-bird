@@ -5,10 +5,11 @@ using UnityEngine.InputSystem;
 
 public class FlyBehavior : MonoBehaviour
 {
-    [SerializeField] private float _velocity = 1.5f;
+    [SerializeField] public float _velocity = 1.5f;
     [SerializeField] private float _rotationSpeed = 10f;
 
     private Rigidbody2D _rb;
+    public AudioSource FlyAudio;
 
     // Start is called before the first frame update
     private void Start()
@@ -22,6 +23,7 @@ public class FlyBehavior : MonoBehaviour
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             _rb.velocity = Vector2.up * _velocity;
+            FlyAudio.Play();
         }
     }
 
