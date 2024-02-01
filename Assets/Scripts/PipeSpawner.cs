@@ -9,6 +9,7 @@ public class PipeSpawner : MonoBehaviour
     [SerializeField] private GameObject _pipe;
 
     private float _timer;
+    public Vector3 spawnPos;
 
     // Start is called before the first frame update
     private void Start()
@@ -30,9 +31,14 @@ public class PipeSpawner : MonoBehaviour
 
     private void SpawnPipe()
     {
-        Vector3 spawnPos = new Vector3(-2, Random.Range(-_heightRange, _heightRange));
+        spawnPos = new Vector3(-2, Random.Range(-_heightRange, _heightRange));
         GameObject pipe = Instantiate(_pipe, spawnPos, Quaternion.identity);
 
         Destroy(pipe, 10f);
+    }
+
+    public Vector3 GetSpawnPos()
+    {
+        return spawnPos;
     }
 }

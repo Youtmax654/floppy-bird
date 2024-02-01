@@ -7,6 +7,10 @@ TagManager:
   - Pipe
   - Detector
   - Ground
+  - Undefined
+  - Golden Apple
+  - Banana
+  - Cherries
   layers:
   - Default
   - TransparentFX
