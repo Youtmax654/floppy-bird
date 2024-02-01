@@ -1,7 +1,9 @@
-# Floppy Bird
+<h1>
+  <img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png" alt="Floppy Bird icon" width="50" align="left" />
+  Floppy Bird
+</h1>
 Floppy Bird is a copy of the popular game Flappy Bird which was removed on February 10, 2014
 
-<img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Flappy_Bird_icon.png" alt="Floppy Bird icon" width="50" />
 
 ## Bonus and Mallus
 ### Banana (Mallus)
