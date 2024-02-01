@@ -1417,6 +1417,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _GameOver: {fileID: 6439450424580991870, guid: 0e39109eef2f5004199a56f1f2649291, type: 3}
+  _redFlap: {fileID: 9100000, guid: 5d17b0082c0a7e94ea41e759e3da169d, type: 2}
+  _yellowFlap: {fileID: 9100000, guid: 82b47bb6d6dff744191041c6d1942472, type: 2}
   _score: 0
   gameOverAudio: {fileID: 1545357686}
   AudioSwoosh: {fileID: 244475650}
@@ -1530,9 +1532,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1772097111}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100.000015, y: 871.1596}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 637, y: -83.84039}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1414998226
@@ -2010,10 +2012,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1772097111}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51.459, y: 893.65}
-  m_SizeDelta: {x: 77.287, y: 94.972}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 485.54102, y: -61.349976}
+  m_SizeDelta: {x: 77.28699, y: 94.972046}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1591023416
 MonoBehaviour:

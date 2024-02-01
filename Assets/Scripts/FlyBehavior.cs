@@ -20,7 +20,7 @@ public class FlyBehavior : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        if (Mouse.current.leftButton.wasPressedThisFrame | (Input.touchCount > 0 && Input.GetTouch(0).phase == UnityEngine.TouchPhase.Began))
         {
             _rb.velocity = Vector2.up * _velocity;
             FlyAudio.Play();

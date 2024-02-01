@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class Detector : MonoBehaviour
 {
     [SerializeField] private Canvas _GameOver;
+    [SerializeField] private RuntimeAnimatorController _redFlap;
+    [SerializeField] private RuntimeAnimatorController _yellowFlap;
 
     private float _cherriesTimer;
     private bool _cherriesActive = false;
@@ -32,7 +34,8 @@ public class Detector : MonoBehaviour
                 FlyBehavior playerScript = FindObjectOfType<FlyBehavior>();
                 playerScript._velocity = playerScript._velocity / 1.35f;
                 FlyBehavior playerSkin = FindObjectOfType<FlyBehavior>();
-                playerSkin.GetComponent<SpriteRenderer>().color = Color.white;
+                playerSkin.GetComponent<Animator>().runtimeAnimatorController = _yellowFlap;
+
             }
 
             _cherriesTimer += Time.deltaTime;
@@ -97,7 +100,7 @@ public class Detector : MonoBehaviour
 
             // Changer le Skin --> Red
             FlyBehavior playerSkin = FindObjectOfType<FlyBehavior>();
-            playerSkin.GetComponent<SpriteRenderer>().color = Color.red;
+            playerSkin.GetComponent<Animator>().runtimeAnimatorController = _redFlap;
 
             AudioSwoosh.Play();
         }
